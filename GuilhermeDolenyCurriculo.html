@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currículo - Guilherme Doleny</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      min-height: 100vh;
+      scroll-behavior: smooth;
+      background-color: #f8f9fa;
+    }
+
+    nav {
+      width: 220px;
+      background-color: #0d1117;
+      color: #fff;
+      padding: 40px 20px;
+      position: fixed;
+      height: 100vh;
+    }
+
+    nav h1 {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      color: #00bfff;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav li {
+      margin: 20px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00bfff;
+    }
+
+    main {
+      margin-left: 220px;
+      padding: 40px;
+      flex: 1;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      color: #0d1117;
+      margin-bottom: 20px;
+      border-left: 4px solid #00bfff;
+      padding-left: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #00bfff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #009ad6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        position: static;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+      }
+
+      nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+      }
+
+      main {
+        margin-left: 0;
+        padding: 20px;
+      }
+
+      nav h1 {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>Guilherme</h1>
+    <ul>
+      <li><a href="#apresentacao">Apresentação</a></li>
+      <li><a href="#portfolio">Portfólio</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="apresentacao">
+      <h2>Apresentação Pessoal</h2>
+      <p><strong>Nome:</strong> Guilherme Doleny</p>
+      <p><strong>Curso:</strong> Estudante de Engenharia de Software</p>
+      <p><strong>Instituição:</strong> UniSenaiPR</p>
+      <p><strong>Trabalho:</strong> Atualmente na empresa Scherer</p>
+      <p><strong>Conhecimentos:</strong></p>
+      <ul>
+        <li>Java (básico)</li>
+        <li>Python (básico)</li>
+        <li>C (básico)</li>
+        <li>Excel (intermediário)</li>
+        <li>Inglês (básico)</li>
+      </ul>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfólio</h2>
+      <ul>
+        <li><strong>Interface de Site no Figma</strong> – Projeto simulado de design para site institucional com foco em UX/UI moderno.</li>
+        <li><strong>Protótipo de Tela de Login</strong> – Criado no Figma, com usabilidade e responsividade em mente.</li>
+        <li><strong>Dashboard de Vendas</strong> – Painel visual de dados com tabelas, gráficos e KPIs.</li>
+      </ul>
+    </section>
+
+    <section id="contato">
+      <h2>Formulário de Contato</h2>
+      <form>
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" value="Guilherme Doleny" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" value="guilhermedoleny74@gmail.com" required>
+        </div>
+        <div class="form-group">
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" value="41 - 984217988" required>
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem aqui..."></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Guilherme Doleny</p>
+    </footer>
+  </main>
+
+</body>
+</html>
